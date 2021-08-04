@@ -38,13 +38,16 @@ public class Estado implements Serializable {
 	@OneToMany(mappedBy = "estado")
 	private List<Municipio> municipios = new ArrayList<Municipio>();
 
+	public Estado() {
+
+	}
+
 	public Estado(Integer id, String sigla, String nome, Regiao regiao) {
 		super();
 		this.id = id;
 		this.sigla = sigla;
 		this.nome = nome;
 		this.regiao = regiao;
-
 	}
 
 	public String getNome() {
