@@ -16,7 +16,7 @@ public class CandidatoService {
 	@Autowired
 	private CandidatoRepository repositorio;
 
-	public List<Candidato> findAll() {
+	public List<Candidato> findAll() { 
 		List<Candidato> lista = repositorio.findAll();
 		return lista;
 	}

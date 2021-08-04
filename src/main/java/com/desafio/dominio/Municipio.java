@@ -31,7 +31,11 @@ public class Municipio implements Serializable {
 
 	@OneToMany(mappedBy = "id.municipio")
 	private Set<CandidatoMunicipio> candidatosMunicipios = new HashSet<>();;
-	
+
+	public Municipio() {
+
+	}
+
 	public Municipio(Integer id, String nomeMunicipio, Estado estado) {
 		super();
 		this.id = id;

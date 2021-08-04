@@ -24,6 +24,10 @@ public class Partido {
 	@OneToMany(mappedBy = "partido")
 	private List<Candidato> candidatos = new ArrayList<Candidato>();
 
+	public Partido() {
+
+	}
+
 	public Partido(Integer idPartido, String nome) {
 		super();
 		this.idPartido = idPartido;

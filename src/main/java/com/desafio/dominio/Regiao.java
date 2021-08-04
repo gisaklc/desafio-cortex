@@ -24,8 +24,10 @@ public class Regiao {
 	@OneToMany(mappedBy = "regiao")
 	private List<Estado> estados = new ArrayList<>();
 
-	
-	
+	public Regiao() {
+
+	}
+
 	public Regiao(Integer id, String nomeRegiao) {
 		super();
 		this.id = id;
