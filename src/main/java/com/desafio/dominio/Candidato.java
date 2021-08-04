@@ -35,8 +35,12 @@ public class Candidato implements Serializable {
 	@JsonIgnore // referencia ciclica nao pode ser serializado
 	@OneToMany(mappedBy = "id.candidato")
 	private Set<CandidatoMunicipio> candidatosMunicipios = new HashSet<>();;
-	
-	public Candidato(Integer id, String nome, Partido partido) {	
+
+	public Candidato() {
+
+	}
+
+	public Candidato(Integer id, String nome, Partido partido) {
 		super();
 		this.id = id;
 		this.nome = nome;
