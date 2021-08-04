@@ -16,7 +16,7 @@ import com.desafio.dominio.Candidato;
 import com.desafio.service.CandidatoService;
 
 @RestController
-@RequestMapping(value = "/upload")
+@RequestMapping(value = "/candidatos")
 public class CanditatoResource {
 
 	@Autowired
